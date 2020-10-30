@@ -9,6 +9,8 @@ body {
     margin: 0px auto;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   background-color: aliceblue;
+   
 }
 
 video {
@@ -20,6 +22,7 @@ p {
     text-align: justify;
     line-height: 200%;
     padding: 2.6vw;
+    color: black;
 }
 
 spam {
@@ -34,8 +37,15 @@ img {
 img[data-src] {
     opacity: 0;
 }
+button:hover {
 
+  background-color: lightgreen;
+} 
 
+button {
+ width: 100vw; height: 5vh; border: none; background-color: skyblue
+
+}
 /* Menu
  * --------------------------------------- */
 
@@ -86,7 +96,7 @@ img[data-src] {
 /* Menu List items */
 
 .mobile-menu {
-    clear: both;
+    clear: both; 
 }
 
 .header ul.menu {
@@ -282,7 +292,6 @@ a {
     padding: 0;
     margin: 0;
     text-align: center;
-    border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -291,330 +300,533 @@ a {
 
 .pagina {
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    flex-direction: row;
+    
+  
+    margin: auto;
+    
     align-items: center;
     justify-content: center;
+ 
+  
+   
 }
+    #a { display: flex;}
+
+    #b{ display: none;}
+
 
 .flex {
     display: flex;
-    width: 100vw;
-    height: 50vh;
+
+  
+       border-radius: 25px;
+margin: 12.5px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-size: 50vh;
+    
     background-position: center;
     background-repeat: no-repeat;
+     box-shadow: 0px 0px 10px 0px #aaaaaa;
+   
+    
 }
 
+
+
+
+
+.rotondo {
+    border-radius: 100%;
+    width: 45vh;
+    height: 45vh;
+    
+  transform: scale(0.5);
+    background-size: 35vw;
+    background-color: lightgreen;
+    
+        display: flex;
+
+  
+margin: 12.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+     box-shadow: 0px 0px 10px 0px #aaaaaa;
+   
+    
+   
+
+}
+
+
+.shop{
+    border-radius: 100%;
+    width: 45vh;
+    height: 45vh;
+  
+    background-size: 25vw;
+    background-color: aliceblue;
+    margin-bottom: 5vh;
+       display: flex;
+
+  
+      
+margin: 12.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+     box-shadow: 0px 0px 10px 0px #aaaaaa;
+    
+   
+
+}
+
+.quattro {
+    flex-direction: row; 
+    
+  
+   
+
+}
+
+
+        .quattro .flex { background-size: 25vw;  width: 25vw; height: 25vw;
+        
+}   
+   
+
+}
 .due {
     flex-direction: row;
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-}
-
-.tre {
-    flex-direction: row;
-    width: 50vw;
-    margin: auto;
-}
-
-.due .flex {
-    background-size: 40vh
-}
-
-.paypal {
-    width: 35vh
-}
-
-.insta {
-    height: 100%;
-    width: 50vw;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(25vw, 25vw));
-}
-
-
-.pressa {
- 
-    width: 100%;
-    
    
 }
 
-.press {
-    transform: scale(0.7);
- margin: auto;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(25vw, 25vw));
+
+
+
+.tre {
+    flex-direction: row;
+    
+    
+
+}
+
+
+
+.text {
+ background-color: white;
+}
+
+.tre .flex { height: 50vh;
+      
 }
 
 
 
-.press a img {
-width: 100%;
-
+.due .flex { height: 50vh; width: 50vw;
+        
 }
 
-.insta img {
-    width: 25vw;
-    height: 25vw;
-    transform: scale(0.99);
+.uno .flex {
+        height: 100vh; width: 100vw; margin: 0; border-radius: 0; box-shadow: none;
 }
 
-.insta iframe {
-    width: 25vw;
-    height: 25vw;
-    transform: scale(0.99);
+.paypal {
+    width: 30vh
 }
 
-.product {
-    height: 100vh;
-    padding: 5.7vh;
-    display: grid;
-    grid-auto-rows: 50vh;
-    grid-template-columns: repeat(2, minmax(25vw, 25vw));
-    justify-content: center;
-    align-items: stretch;
+
+
+
+.flex iframe {
+    width: 50vh;
+    height: 50vh;
+    
 }
 
-.card {
-    position: relative;
-    padding: 10px;
-    background: white;
-    display: grid;
-    grid-template-rows: 8fr 1fr 1fr;
-    transition: 0.2s ease-in;
+.quattro .flex img {
+    width: 50vh;
+    height: 50vh;
+    
+    
 }
 
-.card .card-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+
+    
+    
+    
+
+
+.quattro .flex a img {
+    width: 14vw;
+    height: 14vw;
+
+    
 }
 
-.card .card-content .top-bar {
-    width: calc(100% - 40px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-}
 
-.card .card-content .top-bar .float-right {
-    float: right;
-}
 
-.card .card-content .img {
-    width: 100%;
-    justify-content: bottom;
-    align-content: bottom;
-    text-align: center;
+@media screen and (max-width: 1400px) and (orientation:portrait) {  
+    .tre {flex-direction: column;}  
+    .tre .flex {width: 50vh; height: 50vh}
+    
+ .quattro {flex-direction: column;} 
+    .quattro .flex {width: 50vh; height: 50vh; background-size: 50vh}
+    
+    
+    .quattro .flex img {width: 50vh; height: 50vh;}
+    
+    .quattro .flex a img{width: 35vh; height: 35vh;}
+    
+    
+  .due .flex {width: 50vh; height: 50vh;}   
+.due {flex-direction: column;} 
+    .container {
+   
+    display: contents;
 }
+ #menu {display:none;}
+   
+    
+        #a { display: none;}
 
-.card .card-content .img img {
-    max-width: 100%;
-}
+    #b{ display: flex;}
+    
 
-.card .card-description {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    width: calc(100%-20px);
-}
+    
+.flex {margin: 5px}
+    
+   .shop{ background-size: 50vh; margin-bottom: 8vh;
+    
+    
+} 
 
-.card .card-description .title {
-    text-transform: uppercase;
-    text-align: left;
-}
 
-.card .card-description .cart {
-    float: right;
-    cursor: pointer;
-}
+.rotondo{ background-size: 70vh;
+    
+    
+} 
+    
+     .flex iframe {
+    width: 70vh;
+    height: 70vh;
+    
+}     
 
-.card .card-footer {
-    text-transform: uppercase;
-    padding: 0.3em;
-    border-top: 0.5px solid #ececec;
-    letter-spacing: 0.1em;
-    font-size: 11px;
-    color: black;
-    justify-items: left;
-    align-items: center;
-    display: flex;
-}
+} 
+   
+    
+   
 
-.card .card-footer .span {
-    margin: 5px;
-    width: auto;
-    background: #dedede;
-    padding: 4px 7px;
-    border-radius: 2px;
-    font-weight: 100;
-    cursor: pointer;
-}
 
-.card .card-footer .span:hover {
-    background: #aaaaaa;
-}
 
-.card:hover {
-    transition: 0.2s ease-in;
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    box-shadow: 0px 45px 60px 0px rgba(0, 0, 0, 0.087);
-}
 
-@media screen and (max-width: 1200px) {
-    .due {
-        min-width: 100vw
-    }
-    .tre {
-        min-width: 100vw
-    }
-    .product {
-        height: 100%;
-        padding: 5.7vh;
-        display: grid;
-        grid-auto-rows: 50vh;
-        grid-template-columns: repeat(2, minmax(25vw, 50vw));
-        justify-content: center;
-        align-items: stretch;
-    }
+
+
+@media screen and (max-width: 1400px) and (orientation:landscape) {  
+    .tre {flex-direction: column;}  
+    .tre .flex {width: 70vh; height: 70vh}
+    
+ .quattro {flex-direction: column;} 
+    .quattro .flex {width: 70vh; height: 70vh; background-size: 70vh}
+    
+    
+    .quattro .flex img {width: 70vh; height: 70vh;}
+    
+    .quattro .flex a img{width: 35vh; height: 35vh;}
+    
+    
+  .due .flex {width: 70vh; height: 70vh;}   
+.due {flex-direction: column;} 
+    .container {
+   
+    display: contents;
 }
+ #menu {display:none;}
+   
+    
+        #a { display: flex;}
+
+    #b{ display: none;}
+    
+
+    
+.flex {margin: 5px}
+    
+   .shop{ background-size: 50vh; margin-bottom: 8vh;
+    
+    
+} 
+
+
+.rotondo{ background-size: 70vh;
+    
+    
+} 
+    
+     .flex iframe {
+    width: 70vh;
+    height: 70vh;
+    
+}     
+
+} 
+   
+    
+   
+
+
+
 
 @media screen and (max-width: 1023px) and (orientation: portrait) {
-    .due {
-        flex-direction: column;
-        width: 100vw;
-        height: 80vh;
-        border: none
-    }
-    .tre {
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        border: none
-    }
-    .tre p {
-        border: none
-    }
-    p {
-        border: none;
-        border-top: 1px solid;
-        border-bottom: 1px solid;
-        border-color: rgba(0, 0, 0, 0.25);
-    }
-    .paypal {
-        width: 40vh
-    }
-    .product {
-        grid-template-columns: 1fr;
-    }
-    .insta {
-        grid-template-columns: 1fr;
-        width: 100vw;
-        padding: 0;
-    }
-    .insta img {
-        width: 100vw;
-        height: 100vw;
-    }
-    .insta iframe {
-        width: 100vw;
-        height: 100vw;
-    }
-    #menu {
-        display: none
-    }
-    .container {
-        display: inherit
-    }
-    .youtube {
-        height: 100%;
-        width: 100vw;
-    }
- 
-    .press {
- margin: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(100vw, 100vw));
-}
 
-
-
-
-    
-    
+     p {
+    font-size: 15px;
   
-    
 }
+     .flex iframe {
+    width: 73vh;
+    height: 73vh;
+    
+} 
+
+   .tre {flex-direction: column;}  
+    .tre .flex {width: 97vw; height: 70vh}
+    
+ .quattro {flex-direction: column;} 
+    .quattro .flex {width: 97vw; height: 50vh; background-size: 50vh}
+    
+    
+    .quattro .flex img {width: 73vh; height: 73vh;}
+    
+    .quattro .flex a img{width: 25vh; height: 25vh;}
+    
+    
+  .due .flex {width: 97vw;; height: 50vh;}   
+.due {flex-direction: column;} 
+    .container {
+   
+    display: contents;
+}
+ #menu {display:none;}
+   
+    
+        #a { display: none;}
+
+    #b{ display: flex;}
+    
+
+    
+.flex {margin-top: 5px; margin-bottom: 5px; }
+    
+   .shop{ background-size: 50vh; margin-bottom: 8vh;
+    
+    
+} 
 
 
+.rotondo{ background-size: 70vh;} 
+
+    
+
+
+} 
 
 @media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape) {
-    .uno {
-        flex-direction: row;
-    }
-    .due {
-        height: 100vh;
-    }
-    #menu {
-        display: none
-    }
+
+    
+   .tre {flex-direction: column;}  
+    .tre .flex {width: 50vh; height: 50vh}
+    
+ .quattro {flex-direction: column;} 
+    .quattro .flex {width: 50vh; height: 50vh; background-size: 50vh}
+    
+    
+    .quattro .flex img {width: 50vh; height: 50vh;}
+    
+    .quattro .flex a img{width: 25vh; height: 25vh;}
+    
+    
+  .due .flex {width: 50vh; height: 50vh;}   
+.due {flex-direction: column;} 
     .container {
-        display: block
-    }
-    .flex {
-        width: 50vw;
-        height: 100vh;
-        background-size: 80vh;
-    }
-    .due .flex {
-        background-size: 80vh
-    }
-    video {
-        height: 80vh;
-    }
-    .paypal {
-        width: 80vh
-    }
-    .product {
-        grid-template-columns: repeat(2, minmax(25vw, 50vw));
-    }
-    .insta  {
-        padding: 0;
-        height: 100%;
-        width: 100vw;
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(25vw, 50vw));
-    }
+   
+    display: contents;
+}
+ #menu {display:none;}
+   
     
-    
+        #a { display: flex;}
+
+    #b{ display: none;}
     
 
-    .insta img {
-        width: 50vw;
-        height: 50vw;
-    }
-    .insta iframe {
-        width: 50vw;
-        height: 50vw;
-    }
+    
+.flex {margin: 5px}
+    
+   .shop{ background-size: 50vh; margin-bottom: 8vh;
+    
+    
+} 
+
+
+.rotondo{ background-size: 70vh;
+    
+    
+} 
+    
 }
+    
+ @media screen and (width: 280px) and (height: 653px) and (orientation:portrait) {
+
+     .shop{transform: scale(0.8)}  
+     .tre {flex-direction: column;}  
+    .tre .flex {width: 97vw; height: 100vh}
+    
+ .quattro {flex-direction: column;} 
+    .quattro .flex {width: 97vw; height: 70vh; background-size: 50vh}
+    
+    
+    .quattro .flex img {width: 70vh; height: 70vh;}
+    
+    .quattro .flex a img{width: 25vh; height: 25vh;}
+    
+    
+  .due .flex {width: 97vw;; height: 60vh;}   
+.due {flex-direction: column;} 
+    .container {
+   
+    display: contents;
+}
+ #menu {display:none;}
+   
+    
+        #a { display: none;}
+
+    #b{ display: flex;}
+    
+
+    
+.flex {margin-top: 5px; margin-bottom: 5px; }
+    
+   .shop{ background-size: 50vh; margin-bottom: 8vh;
+    
+    
+} 
+
+
+.rotondo{ background-size: 70vh;} 
+
+    
+
+
+} 
+
+@media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape) {
+p {
+    font-size: 15px;
+    
+}
+    
+    spam {
+    font-size: 15px;
+    
+}
+   .tre {flex-direction: column;}  
+    .tre .flex {width: 50vw; height: 50vw}
+    
+ .quattro {flex-direction: column;} 
+    .quattro .flex {width: 50vw; height: 50vw; background-size: 50vw}
+    
+    
+    .quattro .flex img {width: 50vw; height: 50vw;}
+    
+    .quattro .flex a img{width: 25vw; height: 25vw;}
+    
+    
+  .due .flex {width: 50vw; height: 50vw;}   
+.due {flex-direction: column;} 
+    .container {
+   
+    display: contents;
+}
+ #menu {display:none;}
+   
+    
+        #a { display: flex;}
+
+    #b{ display: none;}
+    
+
+    
+.flex {margin: 5px}
+    
+   .shop{ width: 50vw; height: 50vw; background-size: 50vw; margin-bottom: 8vw;
+    
+    
+} 
+
+
+.rotondo{ background-size: 70vw;
+    
+    
+} 
+     
+}
+
+
+
+@media screen and (width: 653px) and (height: 280px) and (orientation: landscape) {
+     
+ .tre {flex-direction: column;}  
+    .tre .flex {width: 50vw; height: 100vh}
+    
+ .quattro {flex-direction: column;} 
+    .quattro .flex {width: 100vh; height: 100vh; background-size: 50vh}
+    
+    
+    .quattro .flex img {width: 100vh; height: 100vh;}
+    
+    .quattro .flex a img{width: 25vh; height: 25vh;}
+    
+    
+  .due .flex {width: 50vh; height: 50vh;}   
+.due {flex-direction: column;} 
+    .container {
+   
+    display: contents;
+}
+ #menu {display:none;}
+   
+    
+        #a { display: flex;}
+
+    #b{ display: none;}
+    
+
+    
+.flex {margin: 5px}
+    
+   .shop{ width: 50vw; height: 50vw
+    
+    
+} 
+
+
+.rotondo{ background-size: 70vh;
+    
+    
+} 
+     
+}
+} 
+
+  
