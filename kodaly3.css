@@ -20,9 +20,10 @@ video {
 p {
     font-size: 17px;
     text-align: justify;
-    line-height: 200%;
-    padding: 2.6vw;
+    line-height: 280%;
+    padding: 5%;
     color: black;
+    width: 100%;
 }
 
 spam {
@@ -425,9 +426,10 @@ margin: 12.5px;
  background-color: white;
 }
 
-.tre .flex { height: 50vh;
+.tre .flex { height: 40vh; width: 50vh;
       
 }
+
 
 
 
