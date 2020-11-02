@@ -19,7 +19,7 @@ video {
 
 p {
     font-size: 17px;
-    text-align: justify;
+    text-align:justify-all;
     line-height: 250%;
     padding: 5%;
     color: black;
@@ -431,7 +431,9 @@ margin: 12.5px;
 }
 
 
-
+.tre .flex p { height: 40vh; width: 50vh; text-align: left
+      
+}
 
 .due .flex { height: 50vh; width: 50vw;
         
